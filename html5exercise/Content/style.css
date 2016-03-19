@@ -1,0 +1,132 @@
+﻿/* tabs code------------------------------*/
+.nav-tab ul li{
+    float: left;
+    list-style-type:none;
+    background-color:#676464;
+    border-right:solid 5px white;
+    color:white;
+}
+
+.nav-tab ul li a{
+    padding: 20px 10px 20px 10px;
+    display:block;
+    color:inherit;
+    text-decoration:none;
+}
+
+.nav-tab ul li a:hover{
+    background-color:#b2b2b2;
+}
+.nav-tab{
+    display:block;
+    float: left;
+    vertical-align:text-top;
+}
+.tab-group{
+    padding-top:80px;
+}
+
+.tab-area{
+    border:solid 1px #d7d7d7;
+    padding:20px;
+    min-height:300px;
+    background-color:#f6f6f6;
+    display:none;
+}
+
+.nav-tab-selected{
+     border:solid 1px #d7d7d7;
+    background-color:#f6f6f6 !important;
+    color:black !important;
+    pointer-events:none !important;
+    padding-bottom:5px;
+}
+/*forms code--------------------*/
+.form-item label{
+    display:block;
+    text-align:center;
+    padding:10px 0 10px 0;
+}
+
+.form-item label:after{
+    content:"*";
+    color:red;
+    margin-left:2px;
+}
+
+.form-item{
+    display:block;
+}
+
+.form-item input[type=text], .form-item select{
+	text-align:center;
+    width:500px;
+	padding:0 0 10px 0;
+}
+
+.button-block{
+    display:block;
+    margin:20px;
+}
+.tab-area{
+    text-align:center;
+}
+.new-messages{
+    text-align:center;
+}
+.new-messages textarea{
+    width:400px;
+    height:50px;
+   
+}
+.chat-messages{
+    width:500px;
+    height:300px;
+    border: solid 1px black;
+    display:inline-block;
+    margin-bottom:10px;
+    text-align:left;
+}
+
+.chat-room-tab{
+    border:solid 1px #d7d7d7;
+}
+
+/*utility css*/
+.important-text{
+    font-weight:bold;
+    margin:0 2px 0 2px;
+}
+
+/*messages*/
+#ulMessages li{
+    list-style-type:none;
+    max-height:300px;
+    overflow-y:auto;
+}
+
+/*status*/
+.connection-status{
+    float:right;
+}
+
+.exit-buton{
+    display:none;
+}
+
+.button{
+	background-color:#424242;
+	color:#fff;
+	padding:10px 20px;
+	display:inline-block;
+	border:none;
+	cursor:pointer;
+}
+
+.button:hover{
+	background-color:#808080 
+}
+
+.button:active{
+	background-color:#424242 
+}

@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "WebChat";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form>
+    <div class="content">
+        <div class="nav-tab">
+            <ul>
+                <li class="nav-tab-option information"><a id="information" href="#" onclick="changeTab('information-tab', this)">Introduce information</a></li>
+                <li class="nav-tab-option chat-room"><a id="chatroom" href="#" onclick="changeTab('chat-room-tab', this)">Chat room</a></li>
+            </ul>
+        </div>
+        <div class="connection-status">
+            <div>Status connection: <span id="spStatus">Off</span><span id="spCounter"></span></div>
+            <div class="exit-buton"><a href="#" onclick="destroyUser()">Exit</a></div>
+        </div>
+        <div class="tab-group">
+            <div class="tab-area information-tab">
+                <div class="form-item">
+                   <label>Name</label> <input type="text" id="txtName" name="txtName" value="" />
+                </div>
+                <div class="form-item">
+                    <label>Chat room</label><select type="text" id="txtRoom" name="txtRoom"></select>
+                </div>                
+                <div class="button-block button"><button class="button" onclick="createUser(event)">Submit</button></div>
+            </div>
+            <div class="tab-area chat-room-tab">
+                <div class="chat-user-name"></div> 
+                <div class="chat-messages" >
+                    <ul id="ulMessages"></ul>
+                </div>
+                <div class="new-messages">
+                    <textarea id="txtMessages" name="txtMessages"></textarea>
+                    <button id="btnSendMessage" class ="button" onclick="sendMessage(event)" disabled>Send</button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html manifest="/WebChat/Manifest">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @RenderBody()
+    <script type="text/javascript">
+        var stopAsync = "";
+    </script>
+    <script src="~/Scripts/Utility.js"></script>
+    <script src="~/Scripts/pub-sub.js"></script>
+    <script src="~/Scripts/EventsService/tabService.js"></script>
+    <script src="~/Scripts/EventsService/createUserService.js"></script>
+    <script src="~/Scripts/EventsService/messagesService.js"></script>
+    <script src="~/Scripts/EventsService/connectionStatusChangedService.js"></script>  
+    <script src="~/Scripts/EventsService/destroyUserService.js"></script>
+    <script src="~/Scripts/asyncSocket.js"></script>
+    <script src="~/Scripts/webChat.js"></script>
+</body>
+</html>
